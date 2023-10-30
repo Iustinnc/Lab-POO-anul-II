@@ -31,7 +31,7 @@ public:
     }
 
 
-    friend ostream& operator <<(ostream& out, Placa_de_baza& a ){
+    friend ostream& operator <<(ostream& out, const Placa_de_baza& a ){
         out<<"Format:"<<a.format<<"\n"<<"Soket:"<<a.soket<<"\n"<<"Frecventa:"<<a.frecventa<<"MHz";
         return out;
     }
@@ -77,7 +77,7 @@ public:
         return soket;
     }
 
-    friend ostream& operator <<(ostream& out, Procesor& a){
+    friend ostream& operator <<(ostream& out, const Procesor& a){
         out<<"Soket:"<<a.soket<<"\n"<<"Frecventa:"<<a.frecventa<<"MHz\n"<<"Nuclee:"<<a.nuclee;
         return out;
     }
@@ -113,7 +113,7 @@ public:
         frecventa = x.frecventa;
     }
 
-    friend ostream& operator <<(ostream& out, MemorieRam& a){
+    friend ostream& operator <<(ostream& out, const MemorieRam& a){
         out<<"Capacitate:"<<a.capacitate<<"GB\nFrecventa:"<<a.frecventa<<"MHz";
         return out;
     }
